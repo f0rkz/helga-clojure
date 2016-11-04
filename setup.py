@@ -47,6 +47,7 @@ setup(
     url='https://github.com/will2dye4/helga-clojure',
     packages=find_packages(),
     py_modules=['helga_clojure'],
+    data_files=[('lib', ['lib/clojure-1.8.0.jar'])],
     include_package_data=True,
     zip_safe=True,
     entry_points=dict(
