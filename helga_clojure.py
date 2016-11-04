@@ -9,7 +9,7 @@ CLOJURE_JAR = os.path.join(os.path.dirname(__file__), 'lib', 'clojure-1.8.0.jar'
 
 
 @command('clojure', aliases=['clj'],
-         help='')   # TODO
+         help='Run Clojure expressions. Usage: helga clojure <expression>')
 def clojure(client, channel, nick, message, cmd, args):
     try:
         java = Popen(['java', '-jar', CLOJURE_JAR, '-e', ' '.join(args)], stdout=PIPE, stderr=PIPE)
