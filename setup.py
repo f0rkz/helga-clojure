@@ -27,7 +27,7 @@ if pip_version >= (1, 5):
 
 setup(
     name='helga-clojure',
-    version='0.1.1',
+    version='0.1.2',
     description='A helga command for executing Clojure code',
     classifiers=[
         'Development Status :: 4 - Beta',
